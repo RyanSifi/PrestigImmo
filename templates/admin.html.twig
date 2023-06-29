@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{#
+  Template de base pour l'intégralité de l'espace « admin »,
+  soit l'éspace réserver aux administrateur pour l'administration de
+  l'application.
+#}
+
+{% block body %}
+  <header class="header">
+    <div class="logo">
+      <p class="ft-display">P</p>
+    </div>
+
+    {% block hero_unit '' %}
+
+    {% block menu %}
+      {% include 'front/partial/_menu.html.twig' %}
+    {% endblock %}
+  </header>
+
+  <main class="main">
+    {% block main '' %}
+  </main>
+
+  <footer class="footer">
+    <p>© - 2022 - PrestigImmo</p>
+  </footer>
+{% endblock %}
